@@ -1,16 +1,14 @@
 # Aula 01
 
-## Apresentação do Professor
-
-Nome: Jackson Barreto
-Email: jjunior@ipca.pt
-www.jacksonbarreto.com
-
-## Apresentação da Disciplina
+## Apresentação da disciplina
 
 Nome: Programação em Javascript
+Coordenador: Jackson Barreto
+Email: [jjunior@ipca.pt](mailto:jjunior@ipca.pt)
+Site: [www.jacksonbarreto.com](http://www.jacksonbarreto.com)
 
-### Módulos
+## Módulos
+
 - Modulo 1 - Fundamentos Web
 - Modulo 2 - Fundamentos JavaScript
 - Modulo 3 - Engenharia de Software
@@ -19,12 +17,14 @@ Nome: Programação em Javascript
 - Modulo 6 - Fundamentos Angular
 - Modulo 7 - Projeto Final
 
-### Avaliação
+## Avaliação
+
 - Exercícios Práticos - 30%
 - Projeto Individual - 40%
 - Teste teórico - 30%
 
-### Cronograma
+## Cronograma
+
 - Inicio: 22 de Janeiro de 2026
 - Teste: 25 de Fevereiro de 2026
 - Realização do Projeto: 5 a 6 de Março de 2026
@@ -32,136 +32,115 @@ Nome: Programação em Javascript
 
 ## Módulo 1 - Fundamentos Web
 
-### Apresentação
+### Professor
 
-Professor: Rodrigo Costa
-Email: rodrigo.costa@innominatum.pt
+Rodrigo Costa
+Email: [rodrigo.costa@innominatum.pt](mailto:rodrigo.costa@innominatum.pt)
 
-### Objetivos
+### Sobre o módulo
 
-- Compreender os conceitos fundamentais da web
-- Aprender a estruturar páginas web utilizando HTML5
-- Estilizar páginas web com CSS3
+Vamos aprender os fundamentos do desenvolvimento web: como organizar projetos, usar o terminal, versionar código com Git e GitHub, e os primeiros passos em HTML5 e CSS3, com foco em semântica, acessibilidade e layout responsivo.
 
-### Conteúdos
+### O que você vai aprender
 
-- Sessão 1: Ambiente, Ferramentas e Introdução ao git e GitHub
-- Sessão 2: HTML5 - Estrutura e Elementos Básicos
-- Sessão 3: HTML5 - Formulários e Elementos Avançados
-- Sessão 4: CSS3 - Seletores, Propriedades e Box Model
+- Usar o terminal para criar, navegar e organizar pastas e arquivos
+- Conceitos essenciais de versionamento de código e repositório (Git e GitHub)
+- Como versionar projetos, proteger seu trabalho e colaborar em equipe
+- Fundamentos de HTML5 e CSS3
 
-## Sessão 1
+### Estrutura do módulo
 
-### Objetivo Geral
+1. Ambiente, Ferramentas e Introdução ao Git/GitHub
+2. HTML5 Semântico e Acessível
+3. Fundamentos de CSS3 e Flexbox
+4. CSS Grid e Layout Final
 
-Compreender o ambiente de desenvolvimento web, as ferramentas essenciais e os conceitos básicos de controle de versão com git e GitHub.
+## Sessão 1 – Ambiente, Ferramentas e Git/GitHub
+
+**Objetivo geral:**
+Compreender o ambiente de desenvolvimento web, as ferramentas essenciais e os conceitos básicos de controle de versão com Git e GitHub.
+
+**Ao final, você será capaz de:**
+
+- Navegar, criar e editar pastas/arquivos pelo terminal
+- Instalar e configurar o Git
+- Aplicar o fluxo básico de versionamento: init, add, commit, push e pull
 
 ### Ambiente de Desenvolvimento
 
-Ambiente de desenvolvimento web refere-se ao conjunto de ferramentas e tecnologias utilizadas para criar, testar e manter sites e aplicações web. Isso inclui editores de código, navegadores, servidores locais e sistemas de controle de versão.
+O ambiente de desenvolvimento web reúne ferramentas como editor de código (VSCode), navegador, terminal e Git. Cada uma tem um papel importante para criar, testar e manter sites e aplicações.
 
-### VsCode
+### VSCode
 
-#### Extensões Recomendadas
+O Visual Studio Code (VSCode) é um editor de código leve, poderoso e gratuito, com suporte a várias linguagens e muitas extensões.
 
-- Live Server
-- Prettier
-- ESLint
+**Dicas:**
+
+- Use extensões como Live Server (para ver o site rodando), Prettier (para padronizar o código) e ESLint (para evitar erros de sintaxe).
 
 ### Terminal Integrado
 
-O terminal integrado no VSCode permite executar comandos diretamente dentro do editor, facilitando o fluxo de trabalho sem a necessidade de alternar entre janelas.
+O terminal do VSCode permite rodar comandos sem sair do editor. Você pode abrir com `Ctrl + `` (acento grave) e alternar entre terminais com `Ctrl + Shift + ``.
 
-#### Principais Funcionalidades
+#### Comandos básicos do terminal
 
-- Acesso rápido ao terminal
-- Suporte a múltiplos terminais
-- Integração com o sistema operacional
+- `pwd`: mostra o caminho da pasta atual
+- `ls` (Linux/macOS/Git Bash) ou `dir` (Windows): lista arquivos e pastas
+- `cd <pasta>`: entra em uma pasta
+  - `cd ..`: volta uma pasta
+  - `cd ~`: vai para a pasta pessoal
+- `mkdir nome`: cria uma nova pasta
+- `touch nome`: cria um novo arquivo (Linux/macOS/Git Bash)
+- `clear` (Linux/macOS/Git Bash) ou `cls` (Windows): limpa o terminal
 
-#### Vantagens do Terminal Integrado
+**Conceitos importantes:**
 
-- Conveniência
-- Eficiência
-- Personalização
+- Caminho relativo depende da pasta atual; caminho absoluto começa na raiz do sistema.
+- Símbolos úteis: `.` (diretório atual), `..` (diretório pai), `~` (home do usuário)
+- Use pastas para organizar seus projetos e arquivos.
+- Para editar arquivos rapidamente no terminal, use o comando `nano` (Linux/macOS/Git Bash).
 
-#### Utilização Básica
+### Git e GitHub – Conceitos Essenciais
 
-- Abrir o terminal: `Ctrl + `` (acento grave)
-- Executar comandos: Digitar comandos diretamente no terminal
-- Navegar entre terminais: `Ctrl + Shift + ` (acento grave)
+- **Git**: sistema de controle de versão. Ele registra todas as mudanças feitas nos arquivos do projeto, permitindo voltar atrás, comparar versões e trabalhar em equipe sem perder nada.
+- **GitHub**: plataforma online para hospedar repositórios Git, compartilhar código e colaborar com outras pessoas. O GitHub usa o Git por trás.
+- **Repositório**: é a pasta do seu projeto monitorada pelo Git, com todo o histórico de alterações.
 
-#### Comandos Úteis
+#### O que o Git faz na prática?
 
-- `ls` / `dir`: Listar arquivos e diretórios
-- `cd`: Mudar de diretório
-  - `cd ..`: Voltar ao diretório anterior
-  - `cd nome_do_diretorio`: Entrar em um diretório específico
-  - `cd ~`: Ir para o diretório home
-  - `cd -`: Voltar ao diretório anterior
-- `mkdir`: Criar um novo diretório
-  - `mkdir -p nome_do_diretorio`: Criar diretórios pai conforme necessário
-- `rm`: Remover arquivos ou diretórios
-- `pwd`: Mostrar o diretório atual
-- `clear`: Limpar o terminal
-- `touch`: Criar um novo arquivo vazio
-- `nano`: Abrir o editor de texto nano
+- Guarda versões do projeto (commits)
+- Registra quem mudou o quê e quando
+- Permite criar ramificações (branches) para testar ideias sem afetar o principal
+- Facilita o trabalho em equipe e serve como backup inteligente
 
-#### Conceitos Básicos
+#### Diferença entre Git e GitHub
 
-- Caminho Absoluto: Caminho completo desde a raiz do sistema de arquivos.
-- Caminho Relativo: Caminho em relação ao diretório atual.
-- Diretório Home: Diretório principal do usuário.
-- Root: Diretório raiz do sistema de arquivos.
+- Git é a ferramenta de versionamento local
+- GitHub é o serviço online para guardar e compartilhar repositórios
 
-### Introdução ao Git e GitHub
+#### Principais comandos do Git
 
-Git é um sistema de controle de versão distribuído que permite rastrear mudanças em arquivos e coordenar o trabalho em projetos entre várias pessoas. GitHub é uma plataforma baseada na web que hospeda repositórios Git, facilitando a colaboração e o compartilhamento de código.
+- `git init`: começa o controle de versões em uma pasta
+- `git status`: mostra o que mudou
+- `git add .` ou `git add <arquivo>`: prepara arquivos para salvar
+- `git commit -m "mensagem"`: salva uma nova versão
+- `git push`: envia as versões para o GitHub
+- `git pull`: traz as novidades do GitHub para seu computador
+- `git branch`: lista as ramificações do projeto
+- `git checkout -b nome`: cria e muda para uma nova ramificação
+- `git checkout nome`: muda para uma ramificação existente
+- `git merge nome`: junta ramificações
+- `git log`: mostra o histórico de commits
 
-#### Versionamento de Código
+#### Conceitos importantes
 
-O versionamento de código é o processo de gerenciar mudanças em arquivos de código-fonte ao longo do tempo. Ele permite que os desenvolvedores acompanhem alterações, revertam para versões anteriores e colaborem com outros desenvolvedores de forma eficiente.
+- **Commit**: cada vez que você salva uma versão do projeto, faz um commit. Ele guarda o estado dos arquivos, quem fez e quando.
+- **Branch**: ramificação do projeto para desenvolver novas ideias sem mexer no principal. A principal geralmente se chama `main` (antigamente `master`).
+- **Repositório local**: está no seu computador. **Repositório remoto**: está no GitHub.
+- O Git não substitui o terminal: ele observa e registra as mudanças feitas nos arquivos e pastas.
 
-No ambiente de desenvolvimento web, o versionamento de código é essencial para manter a integridade do projeto, facilitar a colaboração em equipe e garantir que todas as alterações sejam documentadas e rastreáveis.
+#### Dicas
 
-#### Como funciona o Git
-
-O Git funciona através de um sistema de snapshots, onde cada commit representa uma captura do estado do projeto em um determinado momento. Os desenvolvedores podem criar branches para trabalhar em funcionalidades isoladas, fazer commits para salvar mudanças e mesclar branches quando estiverem prontos para integrar as alterações ao projeto principal.
-Por traz disso, o Git permite um fluxo de trabalho eficiente e colaborativo, facilitando o desenvolvimento de software em equipe.
-
-#### Github
-
-GitHub é uma plataforma de hospedagem de código-fonte que utiliza o sistema de controle de versão Git. Ele oferece uma interface web para gerenciar repositórios, colaborar com outros desenvolvedores e acompanhar o progresso do projeto.
-
-#### Repositórios
-
-Um repositório é um local onde o código-fonte e o histórico de versões de um projeto são armazenados. No GitHub, os repositórios podem ser públicos ou privados, permitindo que os desenvolvedores compartilhem seu trabalho com a comunidade ou mantenham-no restrito a colaboradores específicos.
-
-#### Conceitos Importantes
-
-##### Commit
-
-O commit é uma operação no Git que salva as mudanças feitas nos arquivos do projeto. Cada commit cria um snapshot do estado atual do código, permitindo que os desenvolvedores rastreiem o histórico de alterações e revertam para versões anteriores, se necessário.
-
-##### Log
-
-O log é um comando no Git que exibe o histórico de commits de um repositório. Ele fornece informações detalhadas sobre cada commit, incluindo o autor, a data e a mensagem associada, permitindo que os desenvolvedores acompanhem as mudanças feitas ao longo do tempo.
-
-##### Branch
-
-Uma branch (ramo) no Git é uma linha paralela de desenvolvimento que permite aos desenvolvedores trabalhar em funcionalidades ou correções de bugs isoladamente, sem afetar o código principal. As branches facilitam a colaboração e o gerenciamento de diferentes versões do projeto.
-
-#### Comandos Básicos do Git
-
-- `git init`: Inicializa um novo repositório Git
-- `git clone [url]`: Clona um repositório remoto para o local
-- `git status`: Verifica o status dos arquivos no repositório
-- `git add [arquivo]`: Adiciona arquivos ao stage para o próximo commit
-   - `git add .`: Adiciona todos os arquivos modificados ao stage
-- `git commit -m "mensagem"`: Cria um commit com uma mensagem descritiva
-- `git push`: Envia os commits locais para o repositório remoto
-- `git pull`: Puxa as últimas mudanças do repositório remoto para o local
-- `git branch`: Lista, cria ou deleta branches
-- `git checkout [branch]`: Muda para a branch especificada
-   - `git checkout -b [branch]`: Cria e muda para uma nova branch
-- `git merge [branch]`: Mescla a branch especificada na branch atual
-- `git log`: Exibe o histórico de commits do repositóriozx
+- Use mensagens claras nos commits (ex: `feat: adiciona página inicial`)
+- Veja o histórico de commits com `git log` ou `git log --oneline`
+- Pratique os comandos básicos até se sentir confortável
