@@ -1,3 +1,9 @@
 [submodule "fundamentos-web/sessao-01/folha-de-exercicio/recreate-ipca-home-page"]
 	path = fundamentos-web/sessao-01/folha-de-exercicio/recreate-ipca-home-page
 	url = git@github.com:danielarjordao/recreate-ipca-home-page.git
+[submodule "fundamentos-web/sessao-01/skills-introduction-to-github"]
+	path = fundamentos-web/sessao-01/skills-introduction-to-github
+	url = git@github.com:danielarjordao/skills-introduction-to-github.git
+[submodule "fundamentos-web/sessao-01/skills-communicate-using-markdown"]
+	path = fundamentos-web/sessao-01/skills-communicate-using-markdown
+	url = git@github.com:danielarjordao/skills-communicate-using-markdown.git
