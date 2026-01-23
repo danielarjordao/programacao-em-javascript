@@ -63,7 +63,7 @@ HTML é considerado semântico quando os elementos utilizados refletem o signifi
 
 - `<p>`: Define um parágrafo.
 - `<strong>`: Define um texto com ênfase forte (geralmente exibido em negrito).
-- `<em>`: Define um texto com ênfase (geralmente exibido em itálico, menos forte que o <strong>).
+- `<em>`: Define um texto com ênfase (geralmente exibido em itálico, menos forte que o `<strong>`).
 - `<a>`: Define um hiperlink.
 - `<h1>` a `<h6>`: Define títulos, sendo `<h1>` o mais importante e `<h6>` o menos importante.
 
@@ -113,7 +113,7 @@ Para incorporar imagens em uma página web, utiliza-se a tag `<img>`. Esta tag �
 Para incorporar áudios em uma página web, utiliza-se a tag `<audio>`. Esta tag pode conter atributos como `controls` para exibir controles de reprodução, `autoplay` para iniciar a reprodução automaticamente e `loop` para repetir o áudio.
 O atributo `type` dentro da tag `<source>` especifica o formato do arquivo de áudio.
 
-**<source>**: Define a fonte do arquivo de mídia (áudio ou vídeo) e seu tipo., permitindo que o navegador escolha o formato mais adequado para reprodução. Ele é uma tag auto-fechável e deve ser usado dentro das tags `<audio>` ou `<video>`.
+**`<source>`**: Define a fonte do arquivo de mídia (áudio ou vídeo) e seu tipo., permitindo que o navegador escolha o formato mais adequado para reprodução. Ele é uma tag auto-fechável e deve ser usado dentro das tags `<audio>` ou `<video>`.
 
 ```html
 <audio controls>
