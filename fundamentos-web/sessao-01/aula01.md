@@ -55,7 +55,7 @@ Vamos aprender os fundamentos do desenvolvimento web: como organizar projetos, u
 3. Fundamentos de CSS3 e Flexbox
 4. CSS Grid e Layout Final
 
-## Sessão 1 – Ambiente, Ferramentas e Git/GitHub
+### Sessão 1 – Ambiente, Ferramentas e Git/GitHub
 
 **Objetivo geral:**
 Compreender o ambiente de desenvolvimento web, as ferramentas essenciais e os conceitos básicos de controle de versão com Git e GitHub.
@@ -66,11 +66,11 @@ Compreender o ambiente de desenvolvimento web, as ferramentas essenciais e os co
 - Instalar e configurar o Git
 - Aplicar o fluxo básico de versionamento: init, add, commit, push e pull
 
-### Ambiente de Desenvolvimento
+#### Ambiente de Desenvolvimento
 
 O ambiente de desenvolvimento web reúne ferramentas como editor de código (VSCode), navegador, terminal e Git. Cada uma tem um papel importante para criar, testar e manter sites e aplicações.
 
-### VSCode
+#### VSCode
 
 O Visual Studio Code (VSCode) é um editor de código leve, poderoso e gratuito, com suporte a várias linguagens e muitas extensões.
 
@@ -78,11 +78,11 @@ O Visual Studio Code (VSCode) é um editor de código leve, poderoso e gratuito,
 
 - Use extensões como Live Server (para ver o site rodando), Prettier (para padronizar o código) e ESLint (para evitar erros de sintaxe).
 
-### Terminal Integrado
+#### Terminal Integrado
 
 O terminal do VSCode permite rodar comandos sem sair do editor. Você pode abrir com `Ctrl + `` (acento grave) e alternar entre terminais com `Ctrl + Shift + ``.
 
-#### Comandos básicos do terminal
+##### Comandos básicos do terminal
 
 - `pwd`: mostra o caminho da pasta atual
 - `ls` (Linux/macOS/Git Bash) ou `dir` (Windows): lista arquivos e pastas
@@ -100,25 +100,25 @@ O terminal do VSCode permite rodar comandos sem sair do editor. Você pode abrir
 - Use pastas para organizar seus projetos e arquivos.
 - Para editar arquivos rapidamente no terminal, use o comando `nano` (Linux/macOS/Git Bash).
 
-### Git e GitHub – Conceitos Essenciais
+#### Git e GitHub – Conceitos Essenciais
 
 - **Git**: sistema de controle de versão. Ele registra todas as mudanças feitas nos arquivos do projeto, permitindo voltar atrás, comparar versões e trabalhar em equipe sem perder nada.
 - **GitHub**: plataforma online para hospedar repositórios Git, compartilhar código e colaborar com outras pessoas. O GitHub usa o Git por trás.
 - **Repositório**: é a pasta do seu projeto monitorada pelo Git, com todo o histórico de alterações.
 
-#### O que o Git faz na prática?
+##### O que o Git faz na prática?
 
 - Guarda versões do projeto (commits)
 - Registra quem mudou o quê e quando
 - Permite criar ramificações (branches) para testar ideias sem afetar o principal
 - Facilita o trabalho em equipe e serve como backup inteligente
 
-#### Diferença entre Git e GitHub
+##### Diferença entre Git e GitHub
 
 - Git é a ferramenta de versionamento local
 - GitHub é o serviço online para guardar e compartilhar repositórios
 
-#### Principais comandos do Git
+##### Principais comandos do Git
 
 - `git init`: começa o controle de versões em uma pasta
 - `git status`: mostra o que mudou
@@ -132,14 +132,14 @@ O terminal do VSCode permite rodar comandos sem sair do editor. Você pode abrir
 - `git merge nome`: junta ramificações
 - `git log`: mostra o histórico de commits
 
-#### Conceitos importantes
+##### Conceitos importantes
 
 - **Commit**: cada vez que você salva uma versão do projeto, faz um commit. Ele guarda o estado dos arquivos, quem fez e quando.
 - **Branch**: ramificação do projeto para desenvolver novas ideias sem mexer no principal. A principal geralmente se chama `main` (antigamente `master`).
 - **Repositório local**: está no seu computador. **Repositório remoto**: está no GitHub.
 - O Git não substitui o terminal: ele observa e registra as mudanças feitas nos arquivos e pastas.
 
-#### Dicas
+##### Dicas
 
 - Use mensagens claras nos commits (ex: `feat: adiciona página inicial`)
 - Veja o histórico de commits com `git log` ou `git log --oneline`
