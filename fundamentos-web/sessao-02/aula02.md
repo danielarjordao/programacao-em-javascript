@@ -66,6 +66,9 @@ HTML é considerado semântico quando os elementos utilizados refletem o signifi
 - `<em>`: Define um texto com ênfase (geralmente exibido em itálico, menos forte que o `<strong>`).
 - `<a>`: Define um hiperlink.
 - `<h1>` a `<h6>`: Define títulos, sendo `<h1>` o mais importante e `<h6>` o menos importante.
+- `<ul>`: Define uma lista não ordenada (com marcadores).
+- `<ol>`: Define uma lista ordenada (numerada).
+- `<li>`: Define um item de lista.
 
 ### Estrutura básica semântica de um documento HTML5
 
@@ -76,7 +79,7 @@ HTML é considerado semântico quando os elementos utilizados refletem o signifi
 - `<meta>`: Define metadados sobre o documento, como charset, autor, descrição, etc.
   - `charset="UTF-8"`: Define a codificação de caracteres do documento.
   - `name="viewport"`: Define as configurações de exibição para dispositivos móveis.
-  - `content="width=device-width, initial-scale=1.0"`: Configurações específicas para o viewport(largura e escala inicial).
+  - `content="width=device-width, initial-scale=1.0"`: Configurações específicas para o viewport. `width=device-width` ajusta a largura da página à largura do dispositivo, e `initial-scale=1.0` define o nível de zoom inicial.
 - `<title>`: Define o título da página que aparece na aba do navegador.
 - `<body>`: Contém o conteúdo visível da página, como texto, imagens, links, etc.- `<meta>`: Define metadados sobre o documento, como charset, autor, descrição, etc.
 - `</...>`: Fecha o respectivo elemento.
