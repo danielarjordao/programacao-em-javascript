@@ -80,7 +80,7 @@ O Visual Studio Code (VSCode) é um editor de código leve, poderoso e gratuito,
 
 #### Terminal Integrado
 
-O terminal do VSCode permite rodar comandos sem sair do editor. Você pode abrir com `Ctrl + `` (acento grave) e alternar entre terminais com `Ctrl + Shift + ``.
+O terminal do VSCode permite rodar comandos sem sair do editor. Você pode abrir com `Ctrl +` (acento grave) e alternar entre terminais com `Ctrl + Shift +`.
 
 ##### Comandos básicos do terminal
 
