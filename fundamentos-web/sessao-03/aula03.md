@@ -181,3 +181,64 @@ Em dispositivos móveis, a barra de endereço pode afetar o tamanho da viewport.
 ### Novas unidades
 
 - `svh`, `lvh`, `dvh`: unidades que consideram barras de status/navegação em dispositivos móveis.
+
+### Praticar
+
+Flexbox Froggy - Jogo para aprender Flexbox:
+
+<https://flexboxfroggy.com/>
+
+Regras CSS - FlexBox:
+
+<https://www.w3schools.com/css/css3_flexbox_container.asp>
+
+#### Resumo dos conteúdos praticado: Flexbox
+
+##### flex-wrap
+
+Define se os itens flexíveis devem quebrar linha quando não há espaço suficiente no container.
+
+- `nowrap` (padrão): os itens não quebram linha.
+- `wrap`: os itens quebram linha quando necessário.
+- `wrap-reverse`: os itens quebram linha em ordem reversa.
+
+##### flex-flow
+
+Atalho para definir `flex-direction` e `flex-wrap` juntos.
+
+##### justify-content
+
+Alinha os itens no eixo principal (horizontal).
+
+- `flex-start` (padrão): itens no início.
+- `flex-end`: itens no final.
+- `center`: itens centralizados.
+- `space-between`: espaço igual entre os itens.
+- `space-around`: espaço igual ao redor dos itens.
+- `space-evenly`: espaço igual entre todos os itens e bordas.
+
+##### align-items
+
+Alinha os itens no eixo transversal (vertical)
+
+- `stretch` (padrão): itens esticados para preencher o container.
+- `flex-start`: itens no topo.
+- `flex-end`: itens na base.
+- `center`: itens centralizados verticalmente.
+- `baseline`: itens alinhados pela linha de base do texto.
+
+##### align-content
+
+Alinha as linhas do flex container quando há quebra de linha.
+
+- `stretch` (padrão): linhas esticadas para preencher o container.
+- `flex-start`: linhas no topo.
+- `flex-end`: linhas na base.
+- `center`: linhas centralizadas verticalmente.
+- `space-between`: espaço igual entre as linhas.
+- `space-around`: espaço igual ao redor das linhas.
+- `space-evenly`: espaço igual entre todas as linhas e bordas.
+
+##### Centralização verdadeira
+
+Para centralizar um item tanto horizontal quanto verticalmente, basta usar `justify-content: center;` e `align-items: center;` no container flex.
