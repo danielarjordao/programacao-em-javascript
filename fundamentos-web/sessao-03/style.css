@@ -1,0 +1,17 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+h1 {
+	color: red;
+}
+
+.elemento {
+	color: blue;
+}
+
+p {
+	color: green;
+}
+
