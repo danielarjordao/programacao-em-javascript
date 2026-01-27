@@ -1,3 +1,17 @@
+/*
+margin, define o espaçamento externo
+padding, define o espaçamento interno
+gap, define o espaçamento entre os elementos internos
+justify-content, alinha os elementos no eixo principal
+align-items, alinha os elementos no eixo transversal
+display: flex, define que o container é flexível
+flex-direction, define a direção dos elementos (row, column)
+
+unidades:
+px, define o tamanho em pixels
+%, define o tamanho em relação ao elemento pai
+rem, define o tamanho em relação ao tamanho da fonte raiz
+*/
 
 body {
   background-color: #A45A49;
@@ -7,7 +21,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  height: 500px;
 }
 
 .profile-card {
@@ -15,6 +29,8 @@ body {
   color: #FFF2E7;
   width: 320px;
   padding: 2rem;
+  /* border-radius, define o arredondamento dos cantos
+  rem, define o tamanho em relação ao tamanho da fonte */
   border-radius: 1rem;
   display: flex;
   flex-direction: column;
@@ -23,10 +39,17 @@ body {
 }
 
 .profile-photo {
-  width: 96px;
-  height: 96px;
+  width: 200px;
+  height: 200px;
+  margin: 0;
+  /* border-radius, define o arredondamento dos cantos
+  % quanto maior o valor mais arredondado fica */
   border-radius: 50%;
-  border: 3px solid #EFC764;
+  /* border, define a borda da imagem
+  espessura, estilo (solid, dashed, dotted) e cor */
+  border: 5px solid #A45A49;
+  /* objeft-fit, escolher a melhor forma de ajustar a imagem
+  cover: cobre toda a area, contain: cabe toda a area */
   object-fit: cover;
 }
 
@@ -49,6 +72,7 @@ body {
   gap: 1rem;
 }
 
+/* a, define um link */
 .profile-links a {
   color: #97D4D9;
   background-color: #2F2325;
@@ -57,6 +81,8 @@ body {
   font-weight: bold;
   border: 1px solid #97D4D9;
 }
+
+/* a:hover, define o estilo quando o mouse passa por cima do elemento */
 .profile-links a:hover {
   background-color: #97D4D9;
   color: #2F2325;
