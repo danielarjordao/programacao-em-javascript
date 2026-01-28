@@ -44,6 +44,10 @@ Especificidade é o sistema de pontos que determina qual regra CSS será aplicad
 - ID: 100 pontos
 - !important: máxima prioridade
 
+## Herança em CSS
+
+Herança é o mecanismo pelo qual certos estilos aplicados a um elemento "pai" são automaticamente transmitidos para seus elementos "filhos". Por exemplo, propriedades como `color`, `font-family` e `font-size` normalmente são herdadas, enquanto propriedades de layout (como `margin`, `padding`, `border`) não são. A herança ajuda a manter o CSS mais limpo e evita repetições, mas é importante saber quando ela ocorre para evitar resultados inesperados.
+
 ## Seletores em CSS
 
 Seletores servem para escolher quais elementos HTML serão estilizados. Tipos principais:
