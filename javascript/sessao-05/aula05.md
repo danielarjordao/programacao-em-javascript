@@ -48,3 +48,91 @@ Os tipos por referência em JavaScript incluem:
 #### Temporal Dead Zone (TDZ)
 
 A Temporal Dead Zone (TDZ) é um comportamento em JavaScript que ocorre quando se tenta acessar uma variável declarada com `let` ou `const` antes de sua inicialização. Durante o período entre a declaração da variável e sua inicialização, a variável está em um estado de "zona morta", e qualquer tentativa de acessá-la resultará em um erro de referência (`ReferenceError`).
+
+### Operadores
+
+JavaScript suporta vários tipos de operadores, que são usados para realizar operações em valores e variáveis. Os principais tipos de operadores incluem:
+
+- **Operadores Aritméticos**: Realizam operações matemáticas básicas como adição, subtração, multiplicação, divisão, etc.
+
+  ```javascript
+  let a = 10;
+  let b = 5;
+  let soma = a + b; // Adição
+  let subtracao = a - b; // Subtração
+  let multiplicacao = a * b; // Multiplicação
+  let divisao = a / b; // Divisão
+  ```
+
+- **Operadores de Atribuição**: Atribuem valores a variáveis.
+
+  ```javascript
+  let x = 10; // Atribuição simples
+  x += 5; // Atribuição com adição (equivalente a x = x + 5)
+  x -= 3; // Atribuição com subtração
+  ```
+
+- **Operadores de Comparação**: Comparam dois valores e retornam um valor booleano (`true` ou `false`).
+
+  ```javascript
+  let igual = (a == b); // Igualdade
+  let estritamenteIgual = (a === b); // Estrita igualdade
+  let diferente = (a != b); // Desigualdade
+  let maiorQue = (a > b); // Maior que
+  ```
+
+  - Diferença de `==` e `===`: O operador `==` compara valores após realizar coerção de tipo, enquanto o `===` compara tanto valor quanto tipo, sem coerção.
+
+- **Operadores Lógicos**: Combinam expressões booleanas.
+
+  ```javascript
+  let e = (a > 5 && b < 10); // Operador AND
+  let ou = (a > 5 || b < 3); // Operador OR
+  let nao = !(a > b); // Operador NOT
+  ```
+
+#### Coerção de tipos
+
+A coerção de tipos em JavaScript é o processo pelo qual a linguagem converte automaticamente um valor de um tipo para outro quando necessário. Isso pode ocorrer em operações que envolvem diferentes tipos de dados, como ao usar operadores aritméticos ou de comparação. Por exemplo, ao somar um número e uma string, o JavaScript converte o número em string e realiza a concatenação.
+
+```javascript
+let a = 2;
+let b = "3";
+let soma = a + b; // Aqui ocorre a concatenação, não a soma numérica
+console.log(soma); // Resultado será "23"
+```
+
+#### Ordem de precedência dos operadores
+
+A ordem de precedência dos operadores em JavaScript determina a sequência em que as operações são avaliadas em uma expressão. Operadores com maior precedência são avaliados antes daqueles com menor precedência. Aqui está uma lista simplificada da ordem de precedência dos operadores, do mais alto para o mais baixo:
+
+- **Parênteses**: ()
+
+- **Exponenciação**: **
+
+- **Multiplicação e Divisão**: *, /, %
+
+- **Adição e Subtração**: +, -
+
+- **Operadores de Comparação**: <, <=, >, >=, ==, !=, ===, !==
+
+- **Operadores Lógicos**: &&, ||, !
+
+- **Operadores de Atribuição**: =, +=, -=, *=, /=, %=, **=, etc.
+
+#### Operador NOT (!)
+
+O operador NOT (`!`) é um operador lógico unário em JavaScript que inverte o valor booleano de uma expressão. Se a expressão for `true`, o operador NOT a transforma em `false`, e vice-versa. É frequentemente usado para negar condições em estruturas de controle, como `if` statements.
+
+#### Comparaçoes e Coerção de tipos
+
+O operador de comparação `==` em JavaScript realiza coerção de tipos, o que significa que ele tenta converter os valores comparados para um tipo comum antes de fazer a comparação. Isso pode levar a resultados inesperados se os tipos dos valores forem diferentes. Por exemplo:
+
+```javascript
+console.log(5 == '5'); // true, porque a string '5' é convertida para o número 5
+console.log(0 == false); // true, porque false é convertido para o número 0
+console.log(null == undefined); // true, porque ambos são considerados iguais em coerção
+```
+
+- Para evitar problemas relacionados à coerção de tipos, é recomendado usar o operador de comparação estrita `===`, que compara tanto o valor quanto o tipo dos operandos, sem realizar coerção.
+
