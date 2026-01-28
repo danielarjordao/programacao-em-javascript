@@ -13,12 +13,34 @@ Antes do CSS Grid, o layout na web era principalmente unidimensional, utilizando
 Para criar um container de grid, você utiliza a propriedade `display: grid;` ou `display: inline-grid;`. A seguir, você pode definir o número de linhas e colunas usando as propriedades `grid-template-rows` e `grid-template-columns`.
 
 ```css
- .layout {
+.layout {
   display: grid; /* Define o container como um grid */
   grid-template-columns: 1fr 2fr 1fr; /* Define 3 colunas com larguras proporcionais */
   grid-template-rows: 100px auto; /* Define 2 linhas, a primeira com altura fixa e a segunda automática */
 }
 ```
+
+#### Nomeando áreas do grid (grid-template-areas)
+
+Você pode nomear áreas do grid para tornar o layout mais legível e fácil de manter:
+
+```css
+.container {
+  display: grid;
+  grid-template-areas:
+    "header header"
+    "menu content"
+    "footer footer";
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: 60px 1fr 40px;
+}
+.header { grid-area: header; }
+.menu { grid-area: menu; }
+.content { grid-area: content; }
+.footer { grid-area: footer; }
+```
+
+Assim, cada elemento ocupa a área nomeada correspondente, facilitando a organização do layout.
 
 ### Posicionamento de itens no grid
 
@@ -107,6 +129,34 @@ body {
   color: var(--secondary-color);
 }
 ```
+
+## DOM – Document Object Model
+
+O DOM (Document Object Model) é a estrutura em árvore que o navegador cria a partir do HTML, permitindo que o JavaScript acesse e manipule o conteúdo, a estrutura e o estilo da página de forma dinâmica.
+
+### O que é o DOM?
+
+- O HTML é um texto estático, enquanto o DOM é uma estrutura em memória, dinâmica, criada pelo navegador.
+- Cada elemento HTML vira um nó na árvore do DOM.
+- Tipos de nós: elementos (ex: `<div>`, `<p>`), texto, atributos, comentários.
+- O objeto `document` representa toda a página e é a porta de entrada para manipulação via JavaScript.
+
+### Seleção e manipulação de elementos
+
+- Para selecionar elementos, use:
+  - `document.getElementById('id')`
+  - `document.querySelector('seletor')`
+  - `document.querySelectorAll('seletor')`
+- Para alterar conteúdo:
+  - `element.innerHTML` (altera o HTML interno)
+  - `element.textContent` (altera apenas o texto)
+- Para alterar estilos:
+  - `element.style.propriedade`
+  - `element.classList.add('classe')`, `element.classList.remove('classe')`
+- Para criar/remover elementos:
+  - `document.createElement('tag')`
+  - `element.appendChild(novoElemento)`
+  - `element.remove()`
 
 ## Pseudo-classes e Pseudo-elementos
 
