@@ -37,6 +37,7 @@ Os tipos de dados primitivos em JavaScript incluem:
 - **Undefined**: Representa uma variável que foi declarada, mas não inicializada
 - **Null**: Representa a ausência intencional de qualquer valor.
 
+
 #### Tipos por referência
 
 Os tipos por referência em JavaScript incluem:
@@ -44,6 +45,8 @@ Os tipos por referência em JavaScript incluem:
 - **Object**: Estruturas de dados que armazenam coleções de pares chave-valor. Exemplo: `{ nome: "João", idade: 30 }`.
 - **Array**: Estruturas de dados que armazenam listas ordenadas de valores. Exemplo: `[1, 2, 3, 4, 5]`.
 - **Function**: Blocos de código reutilizáveis que podem ser chamados com argumentos para executar uma tarefa específica. Exemplo: `function soma(a, b) { return a + b; }`.
+
+> **Atenção:** Objetos, arrays e funções não guardam o valor diretamente na variável, mas sim uma referência na memória. Isso significa que, ao atribuir um objeto ou array a outra variável, ambas passam a apontar para o mesmo local na memória. Alterações feitas por uma variável afetam a outra, pois compartilham a mesma referência.
 
 #### Temporal Dead Zone (TDZ)
 
