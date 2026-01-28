@@ -57,7 +57,9 @@ HTML é considerado semântico quando os elementos utilizados refletem o signifi
 - `<section>`: Define uma seção genérica de conteúdo.
 - `<article>`: Define um conteúdo independente, como um artigo de blog ou notícia.
 - `<aside>`: Define um conteúdo complementar, como uma barra lateral.
-- `<footer>`: Define o rodapé de uma seção ou página.)
+- `<footer>`: Define o rodapé de uma seção ou página.
+- `<figure>`: Agrupa conteúdo de mídia, como imagens, gráficos ou vídeos, com uma legenda.
+- `<figcaption>`: Fornece uma legenda ou descrição para o conteúdo do `<figure>`.
 
 ### Elementos de texto e sinificados
 
