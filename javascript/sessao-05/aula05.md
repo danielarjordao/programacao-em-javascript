@@ -37,7 +37,6 @@ Os tipos de dados primitivos em JavaScript incluem:
 - **Undefined**: Representa uma variável que foi declarada, mas não inicializada
 - **Null**: Representa a ausência intencional de qualquer valor.
 
-
 #### Tipos por referência
 
 Os tipos por referência em JavaScript incluem:
@@ -138,4 +137,3 @@ console.log(null == undefined); // true, porque ambos são considerados iguais e
 ```
 
 - Para evitar problemas relacionados à coerção de tipos, é recomendado usar o operador de comparação estrita `===`, que compara tanto o valor quanto o tipo dos operandos, sem realizar coerção.
-
