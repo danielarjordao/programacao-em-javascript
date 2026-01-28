@@ -1,0 +1,204 @@
+/*
+    Paleta de cores principal do projeto.
+    Variáveis para facilitar a manutenção e a criação de temas.
+*/
+:root {
+    --bg-dark: #2F2325; /* RGB (47, 35, 37) */
+    --rust: #A45A49; /* RGB (164, 90, 73) */
+    --peach: #E68E7B; /* RGB (230, 142, 123) */
+    --white: #FFFFFF; /* RGB (255, 255, 255) */
+    --blue: #97D4D9; /* RGB (151, 212, 217) */
+    --green: #B3DFD3; /* RGB (179, 223, 211) */
+    --yellow: #EFC764; /* RGB (239, 199, 100) */
+    --soft-pink: #FFF2E7; /* RGB (255, 242, 231) */
+}
+
+/* Reset global para evitar problemas de dimensionamento com padding e border. */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Espaço extra no topo para navegação por âncoras (evita que o header fixe cubra o conteúdo). */
+html {
+    scroll-padding-top: 8rem;
+}
+
+/* Padronização das cores dos títulos para a cor de destaque. */
+h1, h2, h3, h4, h5, h6 {
+    color: var(--peach);
+}
+
+/*
+    Estilo global do corpo: fundo escuro, texto claro, tipografia
+     espaçamento para adaptação ao header e footer fixos.
+*/
+body {
+    background-color: var(--bg-dark);
+    color: var(--soft-pink);
+    font-family: 'Playfair Display', serif;
+    line-height: 1.5;
+    padding-bottom: 8%;
+    padding-top: 8rem;
+}
+
+/*
+    Header fixo com fundo translúcido e blur.
+    Flexbox organiza logo e links em coluna, centralizados.
+*/
+.header {
+    position: fixed;
+    top: 0;
+	width: 100%;
+    background: var(--bg-dark);
+    border-bottom: 1px solid rgba(255, 242, 231, 0.3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2%;
+    gap: 1rem;
+}
+
+/*
+    Estilo global para links: cor diferenciada e sem sublinhado.
+    Hover destaca o link com cor de destaque e sublinhado.
+*/
+a {
+    color: var(--blue);
+    text-decoration: none;
+}
+a:hover {
+    color: var(--yellow);
+    text-decoration: underline;
+}
+
+/*
+    Botão principal: cor de destaque, arredondado, contraste forte.
+    Hover inverte as cores para feedback visual.
+*/
+.btn-primary {
+    background-color: var(--rust);
+    color: var(--soft-pink);
+    text-decoration: none;
+    border-radius: 0.5rem;
+    padding: 0.3rem;
+}
+.btn-primary:hover {
+    background-color: var(--peach);
+    color: var(--rust);
+}
+
+/*
+    Seção "Sobre": padding para espaçamento.
+    Flexbox para layout horizontal com espaçamento.
+    Foto de perfil arredondada com borda destacada.
+    Lista de competências estilizada.
+*/
+.about-section {
+    padding: 3%;
+}
+.about-content {
+    display: flex;
+    gap: 3rem;
+}
+.about-text {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.about-section .profile-photo {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 5px solid var(--rust);
+}
+.about-side {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+    margin-top: 3rem;
+}
+.about-list {
+    list-style: none;
+}
+.about-list li {
+    color: var(--soft-pink);
+    margin-bottom: 0.8rem;
+}
+
+
+/*
+    Grid de projetos: três colunas, espaçamento uniforme.
+    Cartões de projeto com fundo translúcido, borda destacada.
+    Hover destaca o cartão com cor de destaque.
+    Títulos e descrições estilizados.
+*/
+.projects-section {
+    padding: 2%;
+}
+.project-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+}
+.project-card {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(164, 90, 73, 0.5);
+    border-radius: 0.8rem;
+    padding: 1rem;
+    text-decoration: none;
+    color: inherit;
+}
+.project-card:hover {
+    border-color: var(--peach);
+    cursor: pointer;
+    text-decoration: none;
+    color: inherit;
+}
+.project-card h4 {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.project-card p {
+    font-size: 0.8rem;
+}
+.extra-text {
+    color: var(--green);
+    font-size: 0.7rem;
+}
+
+/*
+    Rodapé fixo, com grid para organizar informações finais.
+    Com a mesma identidade visual do header.
+*/
+.footer {
+    font-size: 0.8rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: var(--bg-dark);
+    border-top: 1px solid rgba(255, 242, 231, 0.3);
+    padding: 1%;
+}
+.footer-grid {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    justify-items: center;
+}
+
+/*
+    Responsividade: adaptações para telas menores.
+    transformação do layout "Sobre" para coluna.
+    Grid de projetos para uma coluna.
+*/
+@media (max-width: 768px) {
+    .about-content {
+        flex-direction: column;
+        align-items: center;
+    }
+    .project-grid {
+        grid-template-columns: 1fr;
+    }
+}
