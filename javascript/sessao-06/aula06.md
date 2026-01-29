@@ -83,6 +83,32 @@ O operador ternário é uma forma concisa de escrever uma declaração `if...els
 - Condições simples: Usam operadores de comparação como `==`, `===`, `!=`, `!==`, `<`, `>`, `<=`, `>=`.
 - Condições compostas: Usam operadores lógicos como `&&` (E), `||` (OU), `!` (NÃO) para combinar múltiplas condições.`
 
+### Truthy e Falsy
+
+Em JavaScript, todos os valores possuem um comportamento booleano quando avaliados em uma expressão condicional. Eles podem ser considerados **truthy** (avaliados como verdadeiro) ou **falsy** (avaliados como falso).
+
+#### Valores Falsy
+
+Os principais valores considerados falsy são:
+- `false`
+- `0` e `-0`
+- `""` (string vazia)
+- `null`
+- `undefined`
+- `NaN`
+
+Qualquer valor diferente desses é considerado **truthy**.
+
+#### Sintaxe de uso
+
+```javascript
+if ("") {
+  console.log("Isso não será executado, pois a string vazia é falsy");
+} else {
+  console.log("Isso será executado, pois a condição é falsy.");
+}
+```
+
 ### Blocos e escopo
 
 Em JavaScript, blocos de código são definidos por chaves `{}` e são usados para agrupar declarações. O escopo de variáveis declaradas com `let` e `const` é limitado ao bloco em que foram definidas, enquanto variáveis declaradas com `var` têm escopo de função.
@@ -113,6 +139,35 @@ let nomeDoArray = [elemento1, elemento2, elemento3, ...];
 ### Introdução aos loops
 
 Loops são estruturas de controle que permitem repetir um bloco de código várias vezes enquanto uma condição for verdadeira.
+
+### Controle de ciclos: break e continue
+
+Em loops, podemos usar as instruções `break` e `continue` para controlar o fluxo de execução:
+
+- `break`: Encerra imediatamente o loop mais próximo, mesmo que a condição ainda seja verdadeira.
+- `continue`: Interrompe a iteração atual e passa para a próxima iteração do loop.
+
+#### Sintaxe de break
+
+```javascript
+for (let i = 0; i < 5; i++) {
+  if (i === 3) {
+    break; // Sai do loop quando i for 3
+  }
+  console.log(i);
+}
+```
+
+#### Sintaxe de continue
+
+```javascript
+for (let i = 0; i < 5; i++) {
+  if (i === 3) {
+    continue; // Pula a iteração quando i for 3
+  }
+  console.log(i);
+}
+```
 
 ### Tipos de loops
 
