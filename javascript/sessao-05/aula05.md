@@ -19,6 +19,28 @@ JavaScript é usado principalmente para:
 
 O JavaScript é executado principalmente em navegadores web, que atuam como interpretadores da linguagem. Cada navegador possui um motor JavaScript que interpreta e executa o código, permitindo que os desenvolvedores criem experiências ricas e interativas para os usuários. Os motores fazem a comunicação entre o JavaScript e o HTML/CSS, possibilitando a manipulação do DOM e a resposta a eventos do usuário.
 
+#### Console do navegador
+
+O console do navegador é uma ferramenta essencial para testar pequenos trechos de código, depurar, ver resultados e mensagens de erro. Para abrir, pressione F12 ou clique com o botão direito na página e selecione "Inspecionar" > aba Console. Exemplo:
+
+```javascript
+console.log('Olá, mundo!');
+```
+
+O comando acima exibe a mensagem no console.
+
+### Execução sequencial do código
+
+O JavaScript executa o código de cima para baixo, linha a linha. A ordem das instruções afeta o resultado do programa.
+
+```javascript
+let a = 5;
+let b = 10;
+console.log(soma); // Erro: soma não definida
+let soma = a + b;
+console.log(soma); // Exibe 15
+```
+
 ### Variáveis
 
 JavaScript é uma linguagem baseada em valores, o que significa que tudo em JavaScript é representado por valores. Esses valores podem ser de diferentes tipos, como números, strings, booleanos, objetos, arrays, entre outros. Os valores são armazenados em variáveis e podem ser manipulados através de operações e funções. Elas podem ser declaradas usando as palavras-chave `let`, `const` ou `var`. A escolha entre essas palavras-chave depende do escopo e da mutabilidade desejada para a variável.
@@ -47,6 +69,17 @@ Os tipos por referência em JavaScript incluem:
 
 > **Atenção:** Objetos, arrays e funções não guardam o valor diretamente na variável, mas sim uma referência na memória. Isso significa que, ao atribuir um objeto ou array a outra variável, ambas passam a apontar para o mesmo local na memória. Alterações feitas por uma variável afetam a outra, pois compartilham a mesma referência.
 
+// Exemplo prático de referência compartilhada:
+
+```javascript
+let a = { valor: 10 };
+let b = a;
+b.valor = 20;
+console.log(a.valor); // 20
+```
+
+Ambas as variáveis apontam para o mesmo objeto na memória.
+
 #### Temporal Dead Zone (TDZ)
 
 A Temporal Dead Zone (TDZ) é um comportamento em JavaScript que ocorre quando se tenta acessar uma variável declarada com `let` ou `const` antes de sua inicialização. Durante o período entre a declaração da variável e sua inicialização, a variável está em um estado de "zona morta", e qualquer tentativa de acessá-la resultará em um erro de referência (`ReferenceError`).
@@ -64,6 +97,7 @@ JavaScript suporta vários tipos de operadores, que são usados para realizar op
   let subtracao = a - b; // Subtração
   let multiplicacao = a * b; // Multiplicação
   let divisao = a / b; // Divisão
+  let resto = a % b; // Resto da divisão
   ```
 
 - **Operadores de Atribuição**: Atribuem valores a variáveis.
@@ -137,3 +171,12 @@ console.log(null == undefined); // true, porque ambos são considerados iguais e
 ```
 
 - Para evitar problemas relacionados à coerção de tipos, é recomendado usar o operador de comparação estrita `===`, que compara tanto o valor quanto o tipo dos operandos, sem realizar coerção.
+
+### Síntese
+
+- O JavaScript é executado no navegador e em servidores.
+- O código é lido de cima para baixo.
+- Variáveis podem ser declaradas com let, const ou var.
+- Tipos primitivos e por referência têm comportamentos diferentes.
+- Operadores permitem manipular valores e tomar decisões.
+- Comparações podem envolver coerção de tipos; prefira === para evitar surpresas.
