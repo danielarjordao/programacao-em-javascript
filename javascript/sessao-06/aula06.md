@@ -130,10 +130,116 @@ let nomeDoArray = [elemento1, elemento2, elemento3, ...];
 
 ### Métodos comuns de arrays
 
-- `push()`: Adiciona um ou mais elementos ao final do array.
-- `pop()`: Remove o último elemento do array.
-- `shift()`: Remove o primeiro elemento do array.
-- `unshift()`: Adiciona um ou mais elementos ao início do array.
+- **push()**
+  - O que faz? Adiciona um ou mais elementos ao final do array.
+  - Sintaxe: `array.push(elemento1, elemento2, ...)`
+  - Exemplo:
+
+    ```javascript
+    const numeros = [1, 2];
+    numeros.push(3);
+    console.log(numeros); // [1, 2, 3]
+    numeros.push(4, 5);
+    console.log(numeros); // [1, 2, 3, 4, 5]
+    ```
+
+- **pop()**
+  - O que faz? Remove o último elemento do array e o retorna.
+  - Sintaxe: `array.pop()`
+  - Exemplo:
+
+    ```javascript
+    const letras = ['a', 'b', 'c'];
+    const removido = letras.pop();
+    console.log(removido); // 'c'
+    console.log(letras);   // ['a', 'b']
+    ```
+
+- **shift()**
+  - O que faz? Remove o primeiro elemento do array e o retorna.
+  - Sintaxe: `array.shift()`
+  - Exemplo:
+
+    ```javascript
+    const fila = [10, 20, 30];
+    const primeiro = fila.shift();
+    console.log(primeiro); // 10
+    console.log(fila);     // [20, 30]
+    ```
+
+- **unshift()**
+  - O que faz? Adiciona um ou mais elementos ao início do array.
+  - Sintaxe: `array.unshift(elemento1, elemento2, ...)`
+  - Exemplo:
+
+    ```javascript
+    const lista = [2, 3];
+    lista.unshift(1);
+    console.log(lista); // [1, 2, 3]
+    lista.unshift(0, -1);
+    console.log(lista); // [0, -1, 1, 2, 3]
+    ```
+
+### Inserir e remover elementos no meio do array
+
+Em JavaScript, arrays são estruturas indexadas, onde cada elemento possui uma posição (índice) começando em 0.
+
+Para **inserir** um elemento no meio de um array:
+
+- É necessário deslocar manualmente os elementos à direita para abrir espaço.
+- Normalmente, percorremos o array de trás para frente para evitar sobrescrever valores.
+
+Para **remover** um elemento do meio:
+
+- Deslocamos os elementos à esquerda para "tapar o buraco".
+- Depois, diminuímos o tamanho do array (por exemplo, usando `pop()` ou ajustando o `length`).
+
+Esses exercícios ajudam a entender como arrays funcionam internamente.
+
+### Outros métodos úteis de array
+
+- `indexOf()`: Procura um valor dentro do array e
+
+  ```javascript
+  const frutas = ["maçã", "banana", "uva"];
+  console.log(frutas.indexOf("banana")); // 1
+  console.log(frutas.indexOf("pera"));   // -1
+  // Muito usado para verificar se um valor existe no array:
+  if (frutas.indexOf("uva") !== -1) {
+    console.log("Uva está no array!");
+  }
+  ```
+
+- `lastIndexOf()`: Procura o valor da direita para a esquerda, retornando o índice da última ocorrência. Se não encontrar, retorna -1.
+
+  ```javascript
+  const numeros = [1, 2, 3, 2, 4];
+  console.log(numeros.lastIndexOf(2)); // 3
+  ```
+
+- `join()`: Junta todos os elementos do array em uma única string, usando um separador definido.
+
+  ```javascript
+  const palavras = ["Olá", "mundo", "JavaScript"];
+  const frase = palavras.join(" ");
+  console.log(frase); // "Olá mundo JavaScript"
+  // Outros exemplos:
+  palavras.join(","); // "Olá,mundo,JavaScript"
+  palavras.join("-"); // "Olá-mundo-JavaScript"
+  palavras.join("");  // "OlámundoJavaScript"
+  ```
+
+- `concat()`: Junta dois ou mais arrays, criando um novo array combinado (não altera os originais).
+
+  ```javascript
+  const a = [1, 2];
+  const b = [3, 4];
+  const c = a.concat(b);
+  console.log(c); // [1, 2, 3, 4]
+  // Também é possível concatenar mais de um array:
+  const d = a.concat(b, [5, 6]);
+  console.log(d); // [1, 2, 3, 4, 5, 6]
+  ```
 
 ## Loops (laços de repetição)
 
