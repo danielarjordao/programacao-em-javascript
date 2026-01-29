@@ -90,6 +90,7 @@ Em JavaScript, todos os valores possuem um comportamento booleano quando avaliad
 #### Valores Falsy
 
 Os principais valores considerados falsy são:
+
 - `false`
 - `0` e `-0`
 - `""` (string vazia)
