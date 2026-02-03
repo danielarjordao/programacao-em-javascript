@@ -1,0 +1,24 @@
+{
+  "name": "gestordeinventario",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "",
+  "main": "testes.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gongabriela/gestorDeInventario.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gongabriela/gestorDeInventario/issues"
+  },
+  "homepage": "https://github.com/gongabriela/gestorDeInventario#readme"
+}
