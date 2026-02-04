@@ -1,0 +1,102 @@
+/*
+    Paleta de cores principal do projeto.
+    Variáveis para facilitar a manutenção e a criação de temas.
+*/
+:root {
+    --bg-dark: #2F2325; /* RGB (47, 35, 37) */
+    --rust: #A45A49; /* RGB (164, 90, 73) */
+    --peach: #E68E7B; /* RGB (230, 142, 123) */
+    --white: #FFFFFF; /* RGB (255, 255, 255) */
+    --blue: #97D4D9; /* RGB (151, 212, 217) */
+    --green: #B3DFD3; /* RGB (179, 223, 211) */
+    --yellow: #EFC764; /* RGB (239, 199, 100) */
+    --soft-pink: #FFF2E7; /* RGB (255, 242, 231) */
+}
+
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+h1, p {
+	color: var(--peach);
+}
+
+body {
+	font-family: Arial, sans-serif;
+	background-color: var(--bg-dark);
+	color: var(--white);
+	padding: 2rem;
+}
+
+.galeria {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 1rem;
+	gap: 1rem;
+}
+
+.galeria img {
+	width: 8rem;
+	height: 13rem;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.close-button {
+    background-color: var(--soft-pink);
+	color: var(--rust);
+    text-decoration: none;
+	font-size: 0.8rem;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    cursor: pointer;
+    border: none;
+}
+
+.close-button:hover {
+    background-color: var(--rust);
+	color: var(--peach);
+}
+
+.modal {
+  position: fixed;
+  /* Inset é um atalho para definir top, right, bottom e left */
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* Garante que o modal fique acima de outros elementos */
+  z-index: 1000;
+}
+
+.modal.hidden {
+  display: none;
+}
+
+.modal-content {
+	background-color: var(--bg-dark);
+	padding: 2rem;
+	border-radius: 10px;
+	max-width: 90%;
+	max-height: 90%;
+	/* Centraliza o conteúdo dentro do modal */
+	position: relative;
+}
+
+.modal-content img {
+	max-width: 100%;
+	max-height: 80vh;
+	border-radius: 5px;
+	/* Garante que a imagem seja exibida como bloco para evitar espaços indesejados */
+	display: block;
+}
+
+.modal-content .close-button {
+	/* Posiciona o botão de fechar no canto superior direito do modal */
+	position: absolute;
+	top: 1rem;
+	right: 1rem;
+}
