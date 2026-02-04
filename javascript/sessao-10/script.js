@@ -1,8 +1,8 @@
 const servicos = document.querySelector('.servicos');
 const cards = document.querySelectorAll('.card');
 const modal = document.querySelector('.modal');
-const modalTitulo = document.querySelector('.modalTitulo');
-const modalTexto = document.querySelector('.modalTexto');
+const modalTitulo = document.getElementById('modalTitulo');
+const modalTexto = document.getElementById('modalTexto');
 const btnFechar = document.querySelector('.fechar');
 
 /*
@@ -45,3 +45,30 @@ servicos.addEventListener('click', (e) => {
 		modal.classList.remove('hidden');
 	}
 });
+
+/*
+Fechar o Modal ao clicar fora dele
+*/
+modal.addEventListener('click', (e) => {
+	if (e.target === modal) {
+		modal.classList.add('hidden');
+	}
+});
+
+/*
+Fechar a Modal
+*/
+btnFechar.addEventListener('click', () => {
+	modal.classList.add('hidden');
+});
+
+/*
+Fechar a Modal ao clicar no escape
+*/
+document.addEventListener('keydown', (e) => {
+	if (e.key === 'Escape') {
+		modal.classList.add('hidden');
+	}
+});
+
+

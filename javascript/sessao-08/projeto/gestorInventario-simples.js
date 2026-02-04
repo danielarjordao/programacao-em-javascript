@@ -1,6 +1,7 @@
 // Projeto: Gestor de Inventário
 // Consolidação dos conceitos de Higher Order Functions
 
+// Dados do inventário
 const inventario = [
 	{ id: 1, nome: "Teclado Mecânico RGB", preco: 85, categoria: ["Informática", "Periféricos"], emStock: true },
 	{ id: 2, nome: "Frigideira a Ar (Air Fryer)", preco: 110, categoria: ["Eletrodomésticos", "Cozinha"], emStock: true },
@@ -62,24 +63,24 @@ console.log("GESTOR DE INVENTÁRIO\n");
 const produtosEmStock = obterProdutosEmStock(inventario);
 console.log("1. PRODUTOS EM STOCK:");
 console.log(produtosEmStock);
-console.log(`   → Total: ${produtosEmStock.length} produtos\n`);
+console.log(`   -> Total: ${produtosEmStock.length} produtos\n`);
 
 // 2. Produtos em stock abaixo de 100 euros
 const produtosBaratos = obterProdutosEmStockAbaixoDe100(inventario);
 console.log("2. PRODUTOS EM STOCK COM PREÇO ABAIXO DE 100€:");
 console.log(produtosBaratos);
-console.log(`   → Total: ${produtosBaratos.length} produtos\n`);
+console.log(`   -> Total: ${produtosBaratos.length} produtos\n`);
 
 // 3. Verificar produtos sem stock
 const statusStock = verificarProdutosSemStock(inventario);
 console.log("3. VERIFICAÇÃO DE PRODUTOS SEM STOCK:");
 if (statusStock.existe) {
-	console.log("   ⚠️  Existem produtos sem stock:");
+	console.log("   Existem produtos sem stock:");
 	statusStock.produtos.forEach(produto => {
 		console.log(`      - ${produto.nome} (ID: ${produto.id}, Preço: ${produto.preco}€)`);
 	});
 } else {
-	console.log("   ✅ Todos os produtos estão em stock!");
+	console.log("   Todos os produtos estão em stock!");
 }
 console.log();
 
@@ -88,7 +89,7 @@ const produtosComIVA = calcularPrecosComIVA(inventario);
 console.log("4. LISTA DE PREÇOS COM IVA (23%):");
 produtosComIVA.forEach(produto => {
 	console.log(`   ${produto.nome}:`);
-	console.log(`      Sem IVA: ${produto.preco}€ → Com IVA: ${produto.precoComIVA}€`);
+	console.log(`      Sem IVA: ${produto.preco}€ -> Com IVA: ${produto.precoComIVA}€`);
 });
 console.log();
 
@@ -101,15 +102,3 @@ const valorTotalComIVA = calcularValorTotalInventario(
 	produtosComIVA.map(p => ({ ...p, preco: p.precoComIVA }))
 );
 console.log(`   Total (com IVA): ${valorTotalComIVA.toFixed(2)}€`);
-
-// ============================================
-// RESUMO TÉCNICO
-// ============================================
-console.log("\n=== RESUMO TÉCNICO ===");
-console.log("✓ filter() - Filtrar produtos em stock");
-console.log("✓ filter() - Filtrar produtos em stock < 100€");
-console.log("✓ some() + filter() - Verificar e listar produtos sem stock");
-console.log("✓ map() - Calcular preços com IVA");
-console.log("✓ reduce() - Calcular valor total do inventário");
-console.log("✓ Todas as funções são puras (retornam valores)");
-console.log("✓ Imutabilidade mantida (spread operator)");
