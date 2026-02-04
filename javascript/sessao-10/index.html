@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>NextByte Tecnologia</title>
+</head>
+<body>
+    <main class="servicos">
+        <article class="card" data-servico="web">
+            <h3>Aplicação Web</h3>
+            <p>Sites e sistemas online</p>
+            <button class="saiba-mais">Saiba mais</button>
+        </article>
+
+        <article class="card" data-servico="mobile">
+            <h3>Aplicação Mobile</h3>
+            <p>Apps para Android e iOS</p>
+            <button class="saiba-mais">Saiba mais</button>
+        </article>
+
+        <article class="card" data-servico="redes">
+            <h3>Gestão de Redes</h3>
+            <p>Infraestrutura e segurança</p>
+            <button class="saiba-mais">Saiba mais</button>
+        </article>
+    </main>
+
+    <div class="modal hidden">
+        <article class="modal-content">
+            <button class="fechar" aria-label="Fechar modal">×</button>
+            <h2 id="modalTitulo"></h2>
+            <p id="modalTexto"></p>
+        </article>
+    </div>
+</body>
+</html>
