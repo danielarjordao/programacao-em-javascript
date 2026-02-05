@@ -41,3 +41,9 @@ A estrutura de dados LIFO é uma forma de organizar os dados onde o último item
 #### Diferença entre Arrow Function e Function Expression
 
 No contexto de funções tradicionais (Function Expression), o valor de `this` é dinâmico e depende de como a função é chamada. Já nas Arrow Functions, o valor de `this` é léxico, ou seja, ele é fixo e determinado pelo contexto onde a função foi definida.
+
+### Closures
+
+- **Closure**: Uma closure é uma função que tem acesso às variáveis do seu escopo externo, mesmo depois que a função externa tenha sido executada. Isso permite que a função interna "lembre" do ambiente em que foi criada, o que é útil para criar funções com estado ou para encapsular dados.
+
+
