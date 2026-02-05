@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Formulário Interativo</title>
+	<link rel="stylesheet" href="style.css">
+	<script src="script.js" defer></script>
+</head>
+<body>
+	<header class="header">
+		<h1>Formulário Interativo</h1>
+		<p>Validação em tempo real</p>
+	</header>
+	<main class="container">
+		<!-- noValidate desativa a validação nativa do HTML5 -->
+		<form class="form" novalidate>
+			<div class="field">
+				<!-- for associa o label ao input pelo id -->
+				<label for="nome">Nome completo</label>
+				<!-- required torna o campo obrigatório -->
+				<input id="nome" name="nome" type="text" placeholder="Digite seu nome" required>
+				<!-- small para mensagens de erro -->
+				<small class="error"></small>
+			</div>
+
+			<div class="field">
+				<label for="email">Email</label>
+				<input id="email" name="email" type="email" placeholder="nome@email.com" required>
+				<small class="error"></small>
+			</div>
+
+			<div class="field">
+				<label for="password">Password</label>
+				<input id="password" name="password" type="password" placeholder="Mínimo 8 caracteres" required>
+				<small class="error"></small>
+			</div>
+
+			<div class="field">
+				<label for="confirmPassword">Confirmar password</label>
+				<input id="confirmPassword" name="confirmPassword" type="password" placeholder="Repita a password" required>
+				<small class="error"></small>
+			</div>
+
+			<button class="button" type="submit" disabled>Enviar</button>
+		</form>
+	</main>
+</body>
+</html>

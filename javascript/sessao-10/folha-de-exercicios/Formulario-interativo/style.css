@@ -1,0 +1,117 @@
+/*
+	Paleta de cores principal do projeto.
+	Variáveis para facilitar a manutenção e a criação de temas.
+*/
+:root {
+	--bg-dark: #2F2325;
+	--rust: #A45A49;
+	--peach: #E68E7B;
+	--white: #FFFFFF;
+	--blue: #97D4D9;
+	--green: #B3DFD3;
+	--yellow: #EFC764;
+	--soft-pink: #FFF2E7;
+	--error: #F28B82;
+}
+
+/* Reset CSS */
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+/* Estilização básica */
+body {
+	font-family: Arial, sans-serif;
+	background-color: var(--bg-dark);
+	color: var(--soft-pink);
+}
+
+/* Estilização do formulário */
+.header {
+	text-align: center;
+	padding: 2rem 1rem 1rem;
+}
+
+.header h1 {
+	color: var(--peach);
+}
+
+.container {
+	display: flex;
+	justify-content: center;
+	padding: 2rem 1rem;
+}
+
+/* Estilização do formulário */
+.form {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+	background-color: rgba(255, 255, 255, 0.03);
+	border: 1px solid rgba(164, 90, 73, 0.4);
+	border-radius: 0.8rem;
+	padding: 2rem;
+}
+
+/* Estilização dos campos do formulário */
+.field {
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
+}
+
+/* Estilização dos botões do formulário */
+label {
+	color: var(--peach);
+	font-weight: bold;
+}
+
+/* Estilização dos campos do formulário */
+input {
+	padding: 0.7rem;
+	border-radius: 0.5rem;
+	border: 1px solid var(--rust);
+	background-color: transparent;
+	color: var(--soft-pink);
+	font-size: 1rem;
+}
+
+/* Estilização dos campos do formulário quando estão focados */
+input:focus {
+	outline: none;
+	border-color: var(--peach);
+}
+
+/* Estilização dos campos do formulário quando estão inválidos */
+.error {
+	min-height: 1rem;
+	font-size: 0.85rem;
+	color: var(--error);
+}
+
+/* Estilização dos botões do formulário */
+.button {
+	margin-top: 0.5rem;
+	padding: 0.7rem;
+	border-radius: 0.6rem;
+	border: none;
+	background-color: var(--rust);
+	color: var(--soft-pink);
+	font-size: 1rem;
+	cursor: pointer;
+}
+
+/* Estilização dos botões do formulário quando estão desabilitados */
+.button:disabled {
+	cursor: not-allowed;
+	opacity: 0.6;
+}
+
+/* Estilização dos botões do formulário quando estão habilitados */
+.button:not(:disabled):hover {
+	background-color: var(--peach);
+	color: var(--rust);
+}
