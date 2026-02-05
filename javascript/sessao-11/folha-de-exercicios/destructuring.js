@@ -46,8 +46,8 @@ nos parâmetros para imprimir as informações.
 console.log("\n4:");
 function imprimirProduto({ nome, preco, stock }) {
   console.log(`Produto: ${nome}`);
-  console.log(`Preço: ${preco}`);
-  console.log(`Estoque: ${stock}`);
+  console.log(`Preço: R$ ${preco}`);
+  console.log(`Stock: ${stock} unidades`);
 }
 const produto = { nome: "Notebook", preco: 2500, stock: 10 };
 imprimirProduto(produto);
