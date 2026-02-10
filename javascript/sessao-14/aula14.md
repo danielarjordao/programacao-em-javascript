@@ -145,4 +145,28 @@ import soma from "./utils.js";
 - Melhor para bundlers e analise estatica.
 - Padrao usado no Angular.
 
+## Sintese da aula (metodos e conceitos-chave)
+
+**Web Storage**
+- `localStorage`: dados persistem ate serem removidos.
+- `sessionStorage`: dados duram ate fechar a aba.
+
+**Metodos principais**
+- `setItem(chave, valor)`: grava string.
+- `getItem(chave)`: le string ou `null`.
+- `removeItem(chave)`: remove uma chave.
+- `clear()`: limpa tudo do dominio.
+
+**JSON e persistencia de estado**
+- `JSON.stringify(obj)`: converte objeto/array para string.
+- `JSON.parse(str)`: converte string para objeto/array.
+
+**Modulos (ESModules)**
+- `export` / `import`: modularizacao.
+- **Named export**: varios exports, usa `{ }`.
+- **Default export**: um export principal, nome livre no import.
+
+**Ativacao no HTML**
+- `type="module"`: necessario para usar `import` no navegador.
+
 
