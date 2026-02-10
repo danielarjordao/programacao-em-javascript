@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aula 14 - LocalStorage</title>
+  </head>
+  <body>
+    <h1>LocalStorage - Testes</h1>
+
+    <section>
+      <h2>Valor simples</h2>
+      <input id="tema" type="text" placeholder="tema" />
+      <button id="salvar-tema">Salvar tema</button>
+      <button id="ler-tema">Ler tema</button>
+      <button id="remover-tema">Remover tema</button>
+      <p id="tema-out"></p>
+    </section>
+
+    <section>
+      <h2>Objeto (JSON)</h2>
+      <input id="nome" type="text" placeholder="nome" />
+      <button id="salvar-user">Salvar usuario</button>
+      <button id="ler-user">Ler usuario</button>
+      <button id="limpar-user">Limpar usuario</button>
+      <pre id="user-out"></pre>
+    </section>
+
+    <section>
+      <h2>SessionStorage</h2>
+      <button id="sessao-gravar">Gravar sessao</button>
+      <button id="sessao-ler">Ler sessao</button>
+      <p id="sessao-out"></p>
+    </section>
+
+    <section>
+      <h2>Limpar tudo</h2>
+      <button id="limpar-tudo">Limpar localStorage</button>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>

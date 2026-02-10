@@ -1,0 +1,34 @@
+.body {
+    background-color: rgba(0, 0, 0, 0.835);
+    color: white;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+}
+
+.logotipo {
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 8px 16px;
+    border-radius: 8px;
+}
+
+.theme {
+    padding: 8px 16px;
+    border-radius: 8px;
+}
+
+.theme:hover {
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.835);
+    color: white;
+}
+
+
+.localStorage {
+    font-size: 1.5em;    
+}
