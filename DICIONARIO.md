@@ -6,7 +6,8 @@ Síntese de conceitos e métodos essenciais abordados no curso.
 
 ### Terminal
 
-**Comandos básicos**
+**Comandos básicos:**
+
 - `pwd`: mostra o caminho atual
 - `ls` ou `dir`: lista arquivos e pastas
 - `cd <pasta>`: entra em uma pasta
@@ -16,14 +17,16 @@ Síntese de conceitos e métodos essenciais abordados no curso.
 
 ### Git
 
-**Conceitos principais**
+**Conceitos principais:**
+
 - **Git**: sistema de controle de versão local
 - **GitHub**: plataforma online para repositories
 - **Commit**: salva uma versão do projeto
 - **Branch**: ramificação do projeto
 - **Repository**: pasta monitorada pelo Git
 
-**Comandos essenciais**
+**Comandos essenciais:**
+
 - `git init`: iniciar versionamento
 - `git status`: ver mudanças
 - `git add .`: preparar arquivos
@@ -35,7 +38,8 @@ Síntese de conceitos e métodos essenciais abordados no curso.
 
 ### HTML5 Semântico
 
-**Estrutura básica**
+**Estrutura básica:**
+
 ```html
 <!DOCTYPE html>
 <html lang="pt-BR">
@@ -50,7 +54,8 @@ Síntese de conceitos e métodos essenciais abordados no curso.
 </html>
 ```
 
-**Tags semânticas**
+**Tags semânticas:**
+
 - `<header>`: cabeçalho
 - `<nav>`: navegação
 - `<main>`: conteúdo principal
@@ -60,7 +65,8 @@ Síntese de conceitos e métodos essenciais abordados no curso.
 - `<footer>`: rodapé
 - `<figure>` + `<figcaption>`: mensagem com legenda
 
-**Elementos de texto**
+**Elementos de texto:**
+
 - `<h1>` a `<h6>`: títulos
 - `<p>`: parágrafo
 - `<strong>`: ênfase forte (negrito)
@@ -68,13 +74,15 @@ Síntese de conceitos e métodos essenciais abordados no curso.
 - `<a>`: hiperlink
 - `<ul>`, `<ol>`, `<li>`: listas
 
-**Formulários**
+**Formulários:**
+
 - `<form>`: formulário
 - `<label>`: rótulo
 - `<input>`: campo de entrada
 - `<button>`: botão
 
-**Tipos de input**
+**Tipos de input:**
+
 - `text`: texto simples
 - `email`: email
 - `password`: senha
@@ -86,13 +94,15 @@ Síntese de conceitos e métodos essenciais abordados no curso.
 
 ### CSS3
 
-**Especificidade**
+**Especificidade:**
+
 - Elemento: 1pt
 - Classe/atributo: 10pts
 - ID: 100pts
 - `!important`: máxima prioridade
 
-**Box Model**
+**Box Model:**
+
 ```css
 .box {
   content: ...
@@ -103,7 +113,8 @@ Síntese de conceitos e métodos essenciais abordados no curso.
 }
 ```
 
-**Seletores principais**
+**Seletores principais:**
+
 - Elemento: `p`
 - Classe: `.classe`
 - ID: `#id`
@@ -112,7 +123,8 @@ Síntese de conceitos e métodos essenciais abordados no curso.
 - Pseudo-classe: `:hover`, `:focus`, `:nth-child()`
 - Pseudo-elemento: `::before`, `::after`
 
-**Flexbox**
+**Flexbox:**
+
 ```css
 .container {
   display: flex;
@@ -123,7 +135,8 @@ Síntese de conceitos e métodos essenciais abordados no curso.
 }
 ```
 
-**CSS Grid**
+**CSS Grid:**
+
 ```css
 .grid {
   display: grid;
@@ -133,11 +146,13 @@ Síntese de conceitos e métodos essenciais abordados no curso.
 }
 ```
 
-**Unidades**
+**Unidades:**
+
 - Absolutas: `px`, `cm`, `mm`
 - Relativas: `em`, `rem`, `%`, `vw`, `vh`
 
-**Variáveis CSS**
+**Variáveis CSS:**
+
 ```css
 :root {
   --cor-principal: #3498db;
@@ -149,25 +164,29 @@ body {
 
 ### DOM
 
-**Seleção de elementos**
+**Seleção de elementos:**
+
 - `document.getElementById('id')`: por id
 - `document.querySelector('.classe')`: primeiro com seletor CSS
 - `document.querySelectorAll('.classe')`: todos com seletor CSS
 - `document.getElementsByTagName('p')`: por tag
 - `document.getElementsByClassName('classe')`: por classe
 
-**Manipulação de conteúdo**
+**Manipulação de conteúdo:**
+
 - `element.innerHTML`: altera HTML
 - `element.textContent`: altera só texto
 - `element.innerText`: altera texto visível
 
-**Manipulação de estilos**
+**Manipulação de estilos:**
+
 - `element.style.propriedade = "valor"`: estilo inline
 - `element.classList.add('classe')`: adiciona classe
 - `element.classList.remove('classe')`: remove classe
 - `element.classList.toggle('classe')`: alterna classe
 
-**Criação dinâmica**
+**Criação dinâmica:**
+
 - `document.createElement('tag')`: cria elemento
 - `element.appendChild(filho)`: adiciona filho
 - `element.remove()`: remove elemento
@@ -176,12 +195,14 @@ body {
 
 ### Variáveis e tipos de dados
 
-**Declaração**
+**Declaração:**
+
 - `let`: escopo de bloco, mutável
 - `const`: escopo de bloco, imutável
 - `var`: escopo de função, mutável (evitar)
 
-**Primitivos**
+**Primitivos:**
+
 - `Number`: números (42, 3.14)
 - `String`: texto ("Olá")
 - `Boolean`: true/false
@@ -189,15 +210,18 @@ body {
 - `Null`: ausência intencional
 - `Symbol`: identificador único
 
-**Por referência**
+**Por referência:**
+
 - `Object`: coleção chave-valor
 - `Array`: lista ordenada
 - `Function`: bloco reutilizável
 
 ### Operadores
 
-**Aritméticos**
+**Aritméticos:**
+
 Utilizados para realizar cálculos matemáticos.
+
 - `+`: soma
 - `-`: subtração
 - `*`: multiplicação
@@ -205,37 +229,46 @@ Utilizados para realizar cálculos matemáticos.
 - `%`: resto da divisão
 - `**`: exponenciação
 
-**Comparação**
+**Comparação:**
+
 Comparam dois valores e retornam verdadeiro ou falso.
+
 - `==`: igualdade (com coerção de tipo)
 - `===`: igualdade estrita (sem coerção, recomendado)
 - `!=`: desigualdade (com coerção)
 - `!==`: desigualdade estrita
 - `<`, `>`, `<=`, `>=`: maior/menor
 
-**Lógicos**
+**Lógico:**
+
 Combinaam condições booleanas para criar expressões mais complexas.
+
 - `&&`: AND (E) - verdadeiro apenas se todos forem verdadeiros
 - `||`: OR (OU) - verdadeiro se ao menos um for verdadeiro
 - `!`: NOT (NÃO) - inverte o valor booleano
 
-**Atribuição**
+**Atribuição:**
+
 - `=`, `+=`, `-=`, `*=`, `/=`
 
-**Ternário**
+**Ternário:**
+
 - `condição ? valor_true : valor_false`
 
 ### Truthy e Falsy
 
-**Falsy**
+**Falsy:**
+
 - `false`, `0`, `""`, `null`, `undefined`, `NaN`
 
-**Truthy**
+**Truthy:**
+
 - Tudo que não é falsy
 
 ### Estruturas de controle
 
-**if/else**
+**if/else:**
+
 ```javascript
 if (condição) {
   // código
@@ -246,7 +279,8 @@ if (condição) {
 }
 ```
 
-**switch**
+**switch:**
+
 ```javascript
 switch (valor) {
   case 1:
@@ -257,15 +291,18 @@ switch (valor) {
 }
 ```
 
-**Ternário**
+**Ternário:**
+
 ```javascript
 condição ? valor1 : valor2
 ```
 
 ### Arrays
 
-**Métodos principais**
+**Métodos principais:**
+
 Métodos que modificam ou consultam elementos do array.
+
 - `push()`: adiciona um ou mais elementos ao final
 - `pop()`: remove e retorna o último elemento
 - `shift()`: remove e retorna o primeiro elemento
@@ -274,8 +311,10 @@ Métodos que modificam ou consultam elementos do array.
 - `join()`: converte array em string usando separador
 - `concat()`: junta dois ou mais arrays e retorna novo array (não altera originais)
 
-**Métodos de iteração (HOF)**
+**Métodos de iteração (HOF):**
+
 Métodos de alta ordem que aceitam funções callback.
+
 - `forEach()`: executa função para cada item (sem retornar valor)
 - `map()`: transforma cada item e retorna novo array com mesma dimensão
 - `filter()`: seleciona itens que passam num teste e retorna novo array
@@ -286,34 +325,39 @@ Métodos de alta ordem que aceitam funções callback.
 
 ### Loops
 
-**for**
+**for:**
+
 ```javascript
 for (let i = 0; i < 5; i++) {
   // código
 }
 ```
 
-**while**
+**while:**
+
 ```javascript
 while (condição) {
   // código
 }
 ```
 
-**do...while**
+**do...while:**
+
 ```javascript
 do {
   // código
 } while (condição);
 ```
 
-**Controle de fluxo**
+**Controle de fluxo:**
+
 - `break`: sai do loop
 - `continue`: pula iteração
 
 ### Objetos
 
-**Estrutura**
+**Estrutura:**
+
 ```javascript
 const objeto = {
   chave: "valor",
@@ -322,32 +366,37 @@ const objeto = {
 };
 ```
 
-**Acesso**
+**Acesso:**
+
 - Ponto: `objeto.chave`
 - Colchetes: `objeto["chave"]`
 
 ### Funções
 
-**Declaração**
+**Declaração:**
+
 ```javascript
 function somar(a, b) {
   return a + b;
 }
 ```
 
-**Arrow function**
+**Arrow function:**
+
 ```javascript
 const somar = (a, b) => a + b;
 ```
 
-**Função anônima**
+**Função anônima:**
+
 ```javascript
 const somar = function(a, b) {
   return a + b;
 };
 ```
 
-**Callback**
+**Callback:**
+
 ```javascript
 array.forEach(elemento => {
   // código
@@ -357,10 +406,12 @@ array.forEach(elemento => {
 ### Funções de Alta Ordem (HOF)
 
 Uma função que:
+
 - Recebe outra função como argumento, OU
 - Retorna uma função
 
 Exemplo:
+
 ```javascript
 function criarMultiplicador(x) {
   return function(y) {
@@ -375,6 +426,7 @@ dobrar(5); // 10
 
 **Spread (...)**: espalha elementos de um iterável
 Útil para copiar arrays, combinar arrays ou passar elementos como argumentos.
+
 ```javascript
 const arr1 = [1, 2];
 const arr2 = [...arr1, 3, 4]; // [1, 2, 3, 4]
@@ -383,6 +435,7 @@ const arr2 = [...arr1, 3, 4]; // [1, 2, 3, 4]
 
 **Rest (...)**: coleta múltiplos parâmetros em um array
 Aceita quantos argumentos forem passados e os agrupa num array.
+
 ```javascript
 function soma(...numeros) {
   // numeros é um array com todos os argumentos passados
@@ -395,13 +448,15 @@ soma(1, 2, 3, 4); // 10
 
 Técnica para desempacotar valores de arrays ou propriedades de objetos em variáveis separadas.
 
-**Array**
+**Array:**
+
 ```javascript
 const [a, b, c] = [1, 2, 3];
 // a = 1, b = 2, c = 3
 ```
 
-**Objeto**
+**Objeto:**
+
 ```javascript
 const { nome, idade } = pessoa;
 // Extrai as propriedades nome e idade do objeto pessoa
@@ -410,18 +465,21 @@ const { nome, idade } = pessoa;
 ### Imutabilidade
 
 Não alterar dados originais, criar novos:
+
 - `map()`, `filter()`, `reduce()`, `concat()`: seguras
 - `push()`, `pop()`, `sort()`: mutáveis (evitar)
 
 ### Escopo e Closures
 
-**Escopo**
+**Escopo:**
+
 - Global: acesso de qualquer lugar
 - Função: dentro de uma função
 - Bloco: dentro de `{ }` (let/const)
 
 **Closure**
 Função que mantém acesso a variáveis do escopo externo mesmo após sair:
+
 ```javascript
 function contador() {
   let count = 0;
@@ -442,6 +500,7 @@ function contador() {
 ### Hoisting
 
 Funções e `var` são "içadas" (registradas antes da execução)
+
 - `let` e `const` entram em TDZ (Temporal Dead Zone)
 - Function declarations podem ser usadas antes de declaradas
 - Function expressions só após declaração
@@ -456,6 +515,7 @@ Funções e `var` são "içadas" (registradas antes da execução)
 
 **setTimeout**
 Agenda a execução de uma função após um tempo em milissegundos. Não bloqueia a execução do código seguinte.
+
 ```javascript
 setTimeout(() => {
   console.log("Após 1 segundo");
@@ -463,7 +523,8 @@ setTimeout(() => {
 // O código continua executando enquanto setTimeout aguarda
 ```
 
-**Event Loop**
+**Event Loop:**
+
 1. Call Stack: executa código síncrono
 2. Web APIs: executam tarefas assíncronas
 3. Callback Queue: callbacks esperando
@@ -471,12 +532,14 @@ setTimeout(() => {
 
 ### Promises
 
-**Estados**
+**Estados:**
+
 - `pending`: aguardando
 - `fulfilled`: sucesso
 - `rejected`: erro
 
-**Sintaxe**
+**Sintaxe:**
+
 ```javascript
 const promise = new Promise((resolve, reject) => {
   if (sucesso) {
@@ -494,7 +557,8 @@ promise
 
 ### Async/Await
 
-**Async**
+**Async:**
+
 ```javascript
 async function obterDados() {
   return "Dados";
@@ -502,7 +566,8 @@ async function obterDados() {
 // Sempre retorna uma Promise
 ```
 
-**Await**
+**Await:**
+
 ```javascript
 async function obterDados() {
   const resultado = await promise;
@@ -510,7 +575,8 @@ async function obterDados() {
 }
 ```
 
-**Try/Catch/Finally**
+**Try/Catch/Finally:**
+
 ```javascript
 try {
   const resultado = await promise;
@@ -523,13 +589,15 @@ try {
 
 ### Fetch API
 
-**GET básico**
+**GET básico:**
+
 ```javascript
 const response = await fetch('url');
 const dados = await response.json();
 ```
 
-**Com tratamento de erro**
+**Com tratamento de erro:**
+
 ```javascript
 async function obterDados() {
   try {
@@ -549,11 +617,13 @@ async function obterDados() {
 
 Formato leve para transmitir dados. O navegador trabalha com objetos, mas a rede transmite strings.
 
-**Conversão**
+**Conversão:**
+
 - `JSON.stringify(obj)`: converte objeto/array JavaScript em string JSON para enviar
 - `JSON.parse(json)`: converte string JSON recebida em objeto JavaScript para usar
 
-**Diferença**
+**Diferença:**
+
 - **Objeto JS**: coleção com propriedades, pode ter métodos e símbolos
 - **JSON**: string que segue padrão específico (sem métodos, sem funções)
 
@@ -561,18 +631,21 @@ Formato leve para transmitir dados. O navegador trabalha com objetos, mas a rede
 
 ### localStorage
 
-**Características**
+**Características:**
+
 - Persiste até ser apagado
 - Acesso por domínio
 - Armazena apenas strings
 
-**Métodos**
+**Métodos:**
+
 - `setItem(chave, valor)`: grava
 - `getItem(chave)`: lê (ou `null`)
 - `removeItem(chave)`: remove
 - `clear()`: limpa tudo
 
-**Exemplo**
+**Exemplo:**
+
 ```javascript
 // Guardar um valor
 localStorage.setItem("tema", "dark");
@@ -591,7 +664,8 @@ localStorage.clear();
 
 Igual a `localStorage`, mas desaparece ao fechar a aba.
 
-**Quando usar cada um**
+**Quando usar cada um:**
+
 - `localStorage`: preferências duradouras (tema, idioma)
 - `sessionStorage`: dados temporários da navegação
 
@@ -614,7 +688,8 @@ const user = raw ? JSON.parse(raw) : null;
 
 ### ES Modules
 
-**Named export**
+**Named export:**
+
 ```javascript
 // utils.js
 export function somar(a, b) {
@@ -625,7 +700,8 @@ export function somar(a, b) {
 import { somar } from "./utils.js";
 ```
 
-**Default export**
+**Default export:**
+
 ```javascript
 // utils.js
 export default function somar(a, b) {
@@ -636,7 +712,8 @@ export default function somar(a, b) {
 import somar from "./utils.js";
 ```
 
-**Ativação no HTML**
+**Ativação no HTML:**
+
 ```html
 <script type="module" src="app.js"></script>
 ```
@@ -644,7 +721,7 @@ import somar from "./utils.js";
 ### CommonJS vs ESM
 
 | CommonJS | ESModules |
-|----------|-----------|
+| ---------- | ----------- |
 | `require()` | `import` |
 | `module.exports` | `export` |
 | Node tradicional | Navegador nativo |
