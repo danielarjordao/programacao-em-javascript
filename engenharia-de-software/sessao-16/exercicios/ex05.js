@@ -41,11 +41,11 @@ function inv(d, t) {
 
 // Dados de teste
 const inventario = [
-  { n: "Laptop", p: 1000, q: 10, c: "electronics" },
-  { n: "Mesa", p: 200, q: 3, c: "furniture" },
-  { n: "Teclado", p: 50, q: 25, c: "electronics" },
-  { n: "Cadeira", p: 150, q: 0, c: "furniture" },
-  { n: "Monitor", p: 300, q: 5, c: "electronics" }
+  { nome: "Laptop", preco: 1000, quantidade: 10, categoria: "electronics" },
+  { nome: "Mesa", preco: 200, quantidade: 3, categoria: "furniture" },
+  { nome: "Teclado", preco: 50, quantidade: 25, categoria: "electronics" },
+  { nome: "Cadeira", preco: 150, quantidade: 0, categoria: "furniture" },
+  { nome: "Monitor", preco: 300, quantidade: 5, categoria: "electronics" }
 ];
 console.log("Bónus - Original (tipo 1):", inv(inventario, 1));
 
@@ -53,19 +53,17 @@ console.log("Bónus - Original (tipo 1):", inv(inventario, 1));
 
 function filtrarInventario(inventario, tipoFiltro) {
   const FILTROS = {
-	1: item => item.q > 0, // Ativo
-	2: item => item.q <= 5, // Baixo stock
-	3: item => item.c === "electronics" // Eletrónicos
+    1: item => item.quantidade > 0, // Ativo
+    2: item => item.quantidade <= 5, // Baixo stock
+    3: item => item.categoria === "electronics" // Eletrónicos
   };
   return inventario.filter(FILTROS[tipoFiltro]);
 }
 
 function calcularValorTotal(inventarioFiltrado) {
-  let valorTotal = 0;
-  for (const item of inventarioFiltrado) {
-	valorTotal += item.p * item.q;
-  }
-  return valorTotal;
+  return inventarioFiltrado.reduce(
+    (total, item) => total + item.preco * item.quantidade, 0
+  );
 }
 
 function gerarMensagem(quantidade) {
